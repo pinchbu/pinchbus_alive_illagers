@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "pinchbus_alive_illagers:item/dark_metal"
+  }
+}

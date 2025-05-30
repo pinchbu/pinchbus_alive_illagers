@@ -1,0 +1,28 @@
+{
+  "parent": "item/crossbow",
+  "textures": {
+    "layer0": "pinchbus_alive_illagers:item/advanced_crossbow"
+  },
+  "overrides": [
+    {
+      "predicate": { "pulling": 1 },
+      "model": "pinchbus_alive_illagers:item/advanced_crossbow_pulling_0"
+    },
+    {
+      "predicate": { "pulling": 1, "pull": 0.58 },
+      "model": "pinchbus_alive_illagers:item/advanced_crossbow_pulling_1"
+    },
+    {
+      "predicate": { "pulling": 1, "pull": 1.0 },
+      "model": "pinchbus_alive_illagers:item/advanced_crossbow_pulling_2"
+    },
+    {
+      "predicate": { "charged": 1, "firework": 1 },
+      "model": "pinchbus_alive_illagers:item/advanced_crossbow_firework"
+    },
+    {
+      "predicate": { "charged": 1 },
+      "model": "pinchbus_alive_illagers:item/advanced_crossbow_arrow"
+    }
+  ]
+}
