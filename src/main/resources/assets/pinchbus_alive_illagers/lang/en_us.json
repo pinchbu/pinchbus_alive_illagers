@@ -1,4 +1,6 @@
 {
   "item.pinchbus_alive_illagers.advanced_crossbow": "Advanced Crossbow",
-  "item.pinchbus_alive_illagers.dark_metal": "Dartal"
+  "item.pinchbus_alive_illagers.dark_metal": "Dartal",
+  "entity.pinchbus_alive_illagers.level_01_pillager": "Pillager Captin",
+  "entity.pinchbus_alive_illagers.level_02_pillager": "Pillager Major"
 }

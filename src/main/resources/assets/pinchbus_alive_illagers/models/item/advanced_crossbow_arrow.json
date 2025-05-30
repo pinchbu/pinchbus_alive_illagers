@@ -1,5 +1,5 @@
 {
-  "parent": "item/crossbow",
+  "parent": "pinchbus_alive_illagers:item/advanced_crossbow",
   "textures": {
     "layer0": "pinchbus_alive_illagers:item/advanced_crossbow_arrow"
   }
