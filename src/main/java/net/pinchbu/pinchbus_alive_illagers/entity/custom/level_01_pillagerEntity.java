@@ -19,7 +19,19 @@ public class level_01_pillagerEntity extends Pillager implements GeoEntity {
     }
 
 
-    
+    public static AttributeSupplier setAttributes() {
+        return Pillager.createMobAttributes()
+                .add(Attributes.MAX_HEALTH, 20D)
+                .add(Attributes.ATTACK_DAMAGE, 4.0f)
+                .add(Attributes.ATTACK_SPEED, 1.0f)
+                .add(Attributes.MOVEMENT_SPEED, 0.4f).build();
+
+    }
+
+
+
+
+
 
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {

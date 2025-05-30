@@ -1,5 +1,6 @@
 package net.pinchbu.pinchbus_alive_illagers.entity.client;
 
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.pinchbu.pinchbus_alive_illagers.entity.custom.level_01_pillagerEntity;
@@ -36,4 +37,5 @@ public class level_01_pillagerModel extends GeoModel<level_01_pillagerEntity> {
             head.setRotY(entityData.netHeadYaw() * Mth.DEG_TO_RAD);
         }
 }
+
 }

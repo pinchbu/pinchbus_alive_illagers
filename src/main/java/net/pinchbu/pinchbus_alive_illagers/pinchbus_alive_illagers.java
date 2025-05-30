@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.pinchbu.pinchbus_alive_illagers.entity.ModEntities;
+import net.pinchbu.pinchbus_alive_illagers.item.ModItems;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 import net.pinchbu.pinchbus_alive_illagers.entity.client.level_01_pillagerRenderer;
@@ -29,6 +30,7 @@ public class pinchbus_alive_illagers
         IEventBus modEventBus = context.getModEventBus();
         modEventBus.addListener(this::commonSetup);
         ModEntities.register(modEventBus);
+        ModItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
