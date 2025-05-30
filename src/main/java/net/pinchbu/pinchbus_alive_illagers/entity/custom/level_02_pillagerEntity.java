@@ -12,21 +12,25 @@ import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInst
 import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 
-public class level_01_pillagerEntity extends Pillager implements GeoEntity {
+public class level_02_pillagerEntity extends Pillager implements GeoEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
-    public level_01_pillagerEntity(EntityType<? extends Pillager> pEntityType, Level pLevel) {
+    public level_02_pillagerEntity(EntityType<? extends Pillager> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
     }
 
 
     public static AttributeSupplier setAttributes() {
         return Pillager.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 20D)
-                .add(Attributes.ATTACK_DAMAGE, 4.0f)
+                .add(Attributes.MAX_HEALTH, 25D)
+                .add(Attributes.ATTACK_DAMAGE, 5.0f)
                 .add(Attributes.ATTACK_SPEED, 1.0f)
                 .add(Attributes.MOVEMENT_SPEED, 0.4f).build();
 
     }
+
+
+
+
 
 
     @Override

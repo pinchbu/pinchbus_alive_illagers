@@ -14,7 +14,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, pinchbus_alive_illagers.MODID);
 
     public static final RegistryObject<Item> ADVANCED_CROSSBOW = ITEMS.register("advanced_crossbow",
-            () -> new AdvancedCrossbowItem(new Item.Properties().stacksTo(1)));
+            () -> new AdvancedCrossbowItem(new Item.Properties().stacksTo(1).durability(465)));
     public static final RegistryObject<Item> DARK_METAL = ITEMS.register("dark_metal",
             () -> new Item(new Item.Properties()));
 

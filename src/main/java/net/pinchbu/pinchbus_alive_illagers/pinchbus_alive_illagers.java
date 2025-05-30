@@ -14,10 +14,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.pinchbu.pinchbus_alive_illagers.entity.ModEntities;
+import net.pinchbu.pinchbus_alive_illagers.event.ModEvents;
+import net.pinchbu.pinchbus_alive_illagers.item.ModItemProperties;
 import net.pinchbu.pinchbus_alive_illagers.item.ModItems;
 import org.slf4j.Logger;
 import software.bernie.geckolib.GeckoLib;
 import net.pinchbu.pinchbus_alive_illagers.entity.client.level_01_pillagerRenderer;
+import net.pinchbu.pinchbus_alive_illagers.entity.client.level_02_pillagerRenderer;
 
 @Mod(pinchbus_alive_illagers.MODID)
 public class pinchbus_alive_illagers
@@ -53,6 +56,8 @@ public class pinchbus_alive_illagers
         public static void onClientSetup(FMLClientSetupEvent event)
         {
             EntityRenderers.register(ModEntities.level_01_pillager.get(), level_01_pillagerRenderer::new);
+            EntityRenderers.register(ModEntities.level_02_pillager.get(), level_02_pillagerRenderer::new);
+            ModItemProperties.addCustomItemProperties();
         }
     }
 }

@@ -8,6 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pinchbu.pinchbus_alive_illagers.entity.custom.level_01_pillagerEntity;
+import net.pinchbu.pinchbus_alive_illagers.entity.custom.level_02_pillagerEntity;
 import net.pinchbu.pinchbus_alive_illagers.pinchbus_alive_illagers;
 
 public class ModEntities {
@@ -19,6 +20,11 @@ public class ModEntities {
                     () -> EntityType.Builder.of(level_01_pillagerEntity::new, MobCategory.MONSTER)
                             .sized(0.6f, 1.95f)
                             .build(new ResourceLocation(pinchbus_alive_illagers.MODID, "level_01_pillager").toString()));
+    public static final RegistryObject<EntityType<level_02_pillagerEntity>> level_02_pillager=
+            ENTITY_TYPES.register("level_02_pillager",
+                    () -> EntityType.Builder.of(level_02_pillagerEntity::new, MobCategory.MONSTER)
+                            .sized(0.6f, 1.95f)
+                            .build(new ResourceLocation(pinchbus_alive_illagers.MODID, "level_02_pillager").toString()));
 
 
     public static void register(IEventBus eventBus) {

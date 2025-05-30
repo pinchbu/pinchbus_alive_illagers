@@ -13,12 +13,5 @@ public class AdvancedCrossbowItem extends CrossbowItem {
 
     @Override
     public int getUseDuration(ItemStack stack) {
-        return 30; // You can change this
-    }
-
-    @Override
-    public UseAnim getUseAnimation(ItemStack stack) {
-        return UseAnim.CROSSBOW;
-    }
-
-}
+        return 30;
+}}
