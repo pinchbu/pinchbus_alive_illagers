@@ -8,6 +8,7 @@ import net.pinchbu.pinchbus_alive_illagers.pinchbus_alive_illagers;
 import software.bernie.geckolib.constant.DataTickets;
 import software.bernie.geckolib.core.animatable.model.CoreGeoBone;
 import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.loading.json.raw.Bone;
 import software.bernie.geckolib.model.GeoModel;
 import software.bernie.geckolib.model.data.EntityModelData;
 
@@ -29,6 +30,7 @@ public class level_01_pillagerModel extends GeoModel<level_01_pillagerEntity> {
     @Override
     public void setCustomAnimations(level_01_pillagerEntity animatable, long instanceId, AnimationState<level_01_pillagerEntity> animationState) {
         CoreGeoBone head = getAnimationProcessor().getBone("head");
+        CoreGeoBone rightArm = getAnimationProcessor().getBone("right_arm2");
 
         if (head != null) {
             EntityModelData entityData = animationState.getData(DataTickets.ENTITY_MODEL_DATA);
@@ -36,6 +38,7 @@ public class level_01_pillagerModel extends GeoModel<level_01_pillagerEntity> {
             head.setRotX(entityData.headPitch() * Mth.DEG_TO_RAD);
             head.setRotY(entityData.netHeadYaw() * Mth.DEG_TO_RAD);
         }
-}
 
-}
+
+
+}}
